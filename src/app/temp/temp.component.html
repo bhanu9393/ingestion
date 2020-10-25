@@ -1,0 +1,11 @@
+<p>temp works!</p>
+<app-button-render></app-button-render>
+<ag-grid-angular 
+    style="width: 800px; height: 800px;" 
+    class="ag-theme-alpine"
+    [rowData]="rowData" 
+    (gridReady)="onGridReady($event)"
+    [editType]="'fullRow'"
+    [frameworkComponents]="frameworkComponents"
+    [columnDefs]="columnDefs">
+</ag-grid-angular>

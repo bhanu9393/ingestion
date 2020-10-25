@@ -1,0 +1,17 @@
+<div class="container">
+
+<h5>visibility</h5>
+<ag-grid-angular
+    #agGrid
+    style="width: 1000px; height: 500px;"
+    class="ag-theme-alpine"
+    [rowData]="rowData"
+    [columnDefs]="columnDe"
+    [defaultColDef]="defaultColDef"
+    (cellValueChanged)="onCellValueChanged($event)"
+    rowSelection="multiple"
+>
+</ag-grid-angular>
+
+
+</div>
